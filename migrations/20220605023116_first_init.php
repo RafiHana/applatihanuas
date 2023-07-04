@@ -19,6 +19,7 @@ final class FirstInit extends AbstractMigration
             ->addIndex('email', Index::TYPE_UNIQUE)
             ->create();
 
+    
         $this->table('post')
             ->addColumn('id', 'integer', ['autoincrement' => true])
             ->addColumn('user_id', 'integer')
