@@ -48,13 +48,15 @@ class Welcome extends CI_Controller
     public function simpan()
     {
         $user_id = $this->input->post('username');
-        $artikel = $this->input->post('artikel');
+        $article = $this->input->post('article');
+        $jenis = $this->input->post('jenis');
 
        
 
         $post = new Post();
         $post->user_id = $user_id;
-        $post->artikel = $artikel;
+        $post->article = $article;
+        $post->jenis = $jenis;
         $post->save();
 
         redirect('Welcome/tampil');
@@ -78,7 +80,8 @@ class Welcome extends CI_Controller
     public function update($id){
         $post = Post::find($id);
         $post->user_id = $this->input->post('username');
-        $post->artikel = $this->input->post('artikel');
+        $post->article = $this->input->post('article');
+        $post->jenis = $this->input->post('jenis');
         $post->save();
 
         redirect('Welcome/tampil');

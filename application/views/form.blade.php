@@ -42,6 +42,19 @@
                   @endforeach
                 </select>
             </div>
+            <p>Jenis</p>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="jenis" id="berita" value="berita">
+              <label class="form-check-label" for="berita">Berita</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="jenis" id="tutorial" value="tutorial">
+              <label class="form-check-label" for="tutorial">Tutorial</label>
+            </div>
+            <div class="form-check form-check-inline">
+              <input class="form-check-input" type="radio" name="jenis" id="blog" value="blog">
+              <label class="form-check-label" for="blog">Blog</label>
+            </div>
             <div class="mb-3">
                 <label for="exampleInputEmail1" class="form-label">Artikel</label>
                 <textarea class="form-control" id="nama" name="artikel" rows="3"></textarea>
